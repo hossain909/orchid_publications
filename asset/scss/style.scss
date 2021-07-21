@@ -1,0 +1,359 @@
+// Google Fonts 
+@import url('https://fonts.googleapis.com/css2?family=Sniglet&display=swap');
+
+$bg-primary: linear-gradient(to bottom #dd2476,#ff512f);
+$bg-lightGray: rgba(255, 255, 255, 0.5);
+$img-color: #ECE3CC;
+$light-black: #444;
+$nav-font: 'Yanone Kaffeesatz', sans-serif;
+$popins-font: 'Poppins', sans-serif;
+$other-font: 'Raleway', sans-serif;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+header a {
+  font-family: 'Sniglet', cursive;
+  font-size: 0.9em;
+  color: #fcf9f9;
+}
+header {
+  background:linear-gradient( #F19C2E,#BB0726,);
+  font-family: Arial, Helvetica, sans-serif;
+}
+.dropdown-content {
+  position: absolute;
+  background: #555;
+  min-width: 160px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.7);
+  border-radius: 10px;
+  padding-left: 20px;
+  display: none;
+  z-index: 1;
+  transition: 2s;
+}
+.dropdown-content a{
+  color: #acaca9;
+  padding: 10px 20px;
+  display: block;
+  text-decoration: none;
+}
+.dropdown-content a:hover {
+  color: #fff;
+
+}
+.dropdown:hover .dropdown-content{
+  display: block;
+}
+.nav-item:last-child{
+  padding-right: 8rem;
+}
+header .nav-item {
+  padding: 0.9rem;
+}
+.nav-link:hover {
+  color: black;
+}
+.navbar-brand {
+  padding-left: 6rem;
+  font-size: 1.6rem;
+}
+header .row .col-md-7 {
+  padding: 22vmin 1vmin;
+  padding-bottom: 35vmin;
+  font-family: $popins-font;
+  color: #f9f9f9;
+}
+header .row .col-md-5 {
+  padding: 4.2vmin, 1vmin;
+}
+header .row .col-md-5 img{
+  max-width: 90%;
+}
+header .container h6 {
+  padding: 1vmin;
+  letter-spacing: .2vmin;
+  text-transform: uppercase;
+}
+header .container h1 {
+  font-family: 'Sniglet', cursive;
+  font-size: 8vmin;
+  padding: .1em 0;
+  font-weight: bold;
+}
+header .container .col-md-7 p {
+  padding: 1vmin 5vmin;
+
+}
+header .container .col-md-7 .btn {
+  padding: 1vmin 6vmin;
+  border-radius: 30px;
+}
+// SECTION 1 //
+.section-1{
+  padding: 20vmin 0;
+}
+.section-1 .row .col-md-6 img {
+  opacity: 0.8;
+  width: 80%;
+  border-radius: 5px;
+}
+.section-1 .row .col-md-6:last-child{
+  position: relative;
+  transition: .5s;
+}
+.section-1 .row .col-md-6:last-child:hover {
+  transform: scale(1.1);
+}
+.section-1 .row .col-md-6 .pane {
+  position: absolute;
+  top: 7vmin;
+  left: -20vmin;
+  background: #fff;
+  padding: 8vmin 13vmin;
+  box-shadow: 0 0 5px rgba(0,0,0,0.5);
+  border-radius: 5px;
+}
+.pane h2{
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: 600;
+  font-size: 3em;
+  font-style: italic;
+}
+// Section 2 
+
+.section-2 .cover {
+  width: 100%;
+  height: 50vmin;
+  background: url('https://images.pexels.com/photos/3598435/pexels-photo-3598435.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  position: relative;
+}
+.section-2 .cover > .content {
+  background: rgba(31, 26, 23, 0.603);
+  height: 100%;
+  width: 100%;
+  color: #fff;
+  padding-top: 10vmin;
+}
+.cover h2 {
+  font-family: "Sniglet", cursive;
+  font-size: 3em;;
+}
+.section-2 .numbers .rect{
+  position: relative;
+  height: 12rem;
+  width: 17rem;
+  background: #fff;
+  padding-top: 3.5vmin;
+  margin: 1rem;
+  box-shadow: 0 0 50px 0 rgba(236, 152, 82, 0.6);
+  border-radius: 5px;
+  z-index: 1;
+}
+.numbers {
+  margin-top: -15vmin;
+}
+.numbers h2 {
+  color: orange;
+  font-size: 4em;
+}
+.numbers p {
+  text-transform: capitalize;
+  font-family: "Sniglet", cursive;
+}
+.purchase h2 {
+  margin-top: 3em;
+  margin-bottom: .2em;
+  font-family: "Sniglet", cursive;
+  font-size: 2.5rem;
+}
+.purchase p {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #444;
+  margin-bottom: 5rem;
+}
+.purchase .cards .card {
+  width: 20rem;
+  margin: 2rem;
+}
+.cards div{
+  padding: 0;
+  margin: 0;
+}
+.cards .title {
+  background: rgba(155, 219, 219, 0.5);
+  border-bottom-right-radius: 170px;
+  padding: 1.5rem 2.5rem;
+}
+.card .card-text{
+  padding: 1rem 1.5rem;
+  color: #444;
+}
+.card-text p {
+  margin-bottom: 0;
+  padding: 2.5rem;
+}
+.pricing h2 {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.card-body .pricing{
+  background:  rgba(155, 219, 219, 0.5);
+  border-top-right-radius: 170px ;
+}
+.card-body .pricing h2 {
+  font-size: 4rem;
+  padding: 4rem;
+}
+.section-3{
+  height: 70vmin;
+  margin-top: 15vmin;
+  background: linear-gradient(#dd2476,#ff512f);
+}
+.section-3 .row {
+  padding-top: 5rem;
+}
+.section-3 h2 {
+  font-size: 3rem;
+  font-family: "Sniglet", cursive;
+  color: #f2f2ff;
+}
+.section-3 p {
+  padding: 2rem 10rem;
+  color: whitesmoke;
+}
+.section-3 .platform .desktop {
+  background: #fff;
+  display: inline-block;
+  padding: 1rem 2rem;
+  border-radius: 3rem;
+}
+.section-3 .platform .desktop p{
+  color: #444;
+}
+// section r
+
+.section-4 .container {
+  padding: 5rem 0;
+}
+.section-4 .container h2 {
+  font-size: 3rem;
+  font-family: "Sniglet", cursive;
+}
+.section-4 .container p {
+  padding-top: 1rem;
+}
+.section-4 .card{
+  width: 22rem;
+  margin-top: 5rem;
+}
+.section-4 .card .card-text {
+  padding: 0
+}
+
+.section-4 .card .card-text>a {
+  font-size: 1.6rem;
+  color: blue;
+}
+
+.team {
+  margin-bottom: 5rem;
+  display: flex;
+}
+.team .col-md-4 {
+  flex: 1;
+  text-align: center;
+  justify-content: center;
+  
+}
+.team .col-md-5 .card{
+  border-radius: 5px;
+}
+.border-radius {
+  border-radius: 40px;
+  padding: 1rem;
+}
+footer .row {
+  padding: 3rem 5rem;
+  background: rgb(53, 52, 52);
+  color: #fff;
+}
+footer .row h2 {
+  color: #fff;
+}
+footer .row .text-muted {
+  font-size: .8rem;
+  color: rgb(104, 100, 100);
+}
+.row .text-muted span {
+  color: #ffae00;
+  display: block;
+  margin-top: 5px;
+}
+footer input {
+  outline: none !important;
+  border: none !important;
+}
+.input-group-text {
+  border-radius: 5px;
+}
+.input-group-text{
+  background: orange;
+  border: none;
+}
+.input-group > .input-group-append > .btn, .input-group > .input-group-append > .input-group-text, .input-group > .input-group-prepend:not(:first-child) > .btn, .input-group > .input-group-prepend:not(:first-child) > .input-group-text, .input-group > .input-group-prepend:first-child > .btn:not(:first-child), .input-group > .input-group-prepend:first-child > .input-group-text:not(:first-child) {
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+footer .column i::before{
+  font-size: 1.2rem;
+  margin-left: .5rem;
+  color: #ffae00;
+}
+.team .card .image{
+  // border: 2px solid red;
+  border-bottom-left-radius: 360px;
+  // border-bottom-right-radius: 180px;
+}
+.team .card {
+  background: #d86476;
+  color: #fff;
+}
+.team .card .image-c{
+  border-bottom-left-radius: 170px;
+  border-bottom-right-radius: 170px;
+}
+
+// @media only screen and (min-width: 768px){
+//   header .navbar-brand{
+//     padding-left: 2rem;
+//   }
+//   header .row .col-md-5 img {
+//     margin-top: 3rem;
+// }
+//   .section-1 .row .col-md-6 .pane {
+//     position: initial;
+//     width: initial;
+//     height: 100%;
+//     padding: 2rem;
+//     overflow: scroll;
+//   }
+//   .section-1 .row .col-md-6 img{
+//     margin-right: 0;
+//   }
+//   .section-2 .numbers .rect {
+//     height: 10rem;
+//     width: 12rem;
+//   }
+//   .numbers .rect h2 {
+//     font-size: 3rem;
+//   }
+//   .purchase .cards .card {
+//     width: 100%;
+//   }
+// }
